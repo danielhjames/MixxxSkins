@@ -12,6 +12,7 @@ These skins provide a simplified interface for live broadcasting which do away w
 After downloading one of the skins, extract the zip file and copy it to the skins directory on the computer where Mixxx is installed. For example, on Debian or Ubuntu:
 
 unzip Airtime1280x1024_skin_for_Mixxx.zip
+
 sudo cp -r Airtime1280x1024 /usr/share/mixxx/skins/
 
 Then, start Mixxx and select the Airtime skin by clicking Options, Preferences, then Interface in the Mixxx main menu. 
