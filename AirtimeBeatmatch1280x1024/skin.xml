@@ -1,9 +1,9 @@
-	<!--
-	Airtime, Skin for Mixxx 1.9.x
+<!--
+	AirtimeBeatmatch1280x1024, Skin for Mixxx 1.11.x
 	http://www.mixxx.org
-	Copyright (C) 2011 Sourcefabric; http://www.sourcefabric.org
+	Copyright (C) 2013 Sourcefabric; http://www.sourcefabric.org
 	This skin is based on the "Deere" Skin for Mixxx 1.8.x by jus
-	The "Airtime" skin for Mixxx is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license.
+	The "AirtimeBeatmatch" skin for Mixxx is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license.
 	http://creativecommons.org/licenses/by-sa/3.0/
 
 	You are free:
@@ -16,9 +16,13 @@
 
 	Share Alike - If you alter, transform, or build upon this work, you may distribute
 	the resulting work only under the same or similar license to this one.
-	-->
-
+	-->	
+	
 	<!--
+	CHANGELOG
+   v.1.11.0(30/12/2013)
+   * Ported to Mixxx 1.11.0		
+	
 	CHANGELOG
 	v1.8.1(16/6/2011)
 	* Ported to Mixxx 1.9
@@ -32,6 +36,21 @@
 
 <!DOCTYPE skin>
 <skin>
+<manifest>
+<title>AirtimeBeatmatch1280x1024, Skin for Mixxx 1.11.x</title>
+<author>Sourcefabric</author>
+<version>1.11.0</version>
+<description>A simple theme for radio stations, with pitch controls. Based on the "Deere" Skin for Mixxx 1.8.x by jus</description>
+<language>en</language>
+<license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
+<attributes>
+  <attribute config_key="[Master],num_decks">2</attribute>
+  <attribute config_key="[Master],num_samplers">0</attribute>
+  <attribute config_key="[Master],num_preview_decks">0</attribute>
+  <attribute config_key="[Samplers],show_samplers">0</attribute>
+</attributes>
+</manifest>
+
 	<!--
 	############################################################################################
 	############################################################################################
