@@ -2,7 +2,7 @@
 	Airtime1280x1024, Skin for Mixxx 1.11.x
 	http://www.mixxx.org
 	Copyright (C) 2013 Sourcefabric; http://www.sourcefabric.org
-	This skin is based on the "Deere" Skin for Mixxx 1.8.x by jus
+	This skin is based on the "Deere" Skin for Mixxx 1.8.x by jus <s.brandt@mixxx.org>
 	The "Airtime" skin for Mixxx is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license.
 	http://creativecommons.org/licenses/by-sa/3.0/
 
@@ -44,9 +44,15 @@
 <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
 <attributes>
   <attribute config_key="[Master],num_decks">2</attribute>
-  <attribute config_key="[Master],num_samplers">0</attribute>
-  <attribute config_key="[Master],num_preview_decks">0</attribute>
+  <attribute config_key="[Master],num_samplers">4</attribute>
+  <attribute config_key="[Master],num_preview_decks">2</attribute>
+  		<!--Optionally, make elements visible on skin load-->
+  <attribute config_key="[Spinny1],show_spinny">0</attribute>
+  <attribute config_key="[Spinny2],show_spinny">0</attribute>
   <attribute config_key="[Samplers],show_samplers">0</attribute>
+  <attribute config_key="[Microphone],show_microphone">0</attribute>
+  <attribute config_key="[Vinylcontrol],show_vinylcontrol">0</attribute>
+  <attribute config_key="[PreviewDeck],show_previewdeck">0</attribute>
 </attributes>
 </manifest>
 
@@ -80,18 +86,28 @@
 	**********************************************
 	-->
 	
-	<TableView>
-		<Style>
-		</Style>
-		<Pos>6,332</Pos>
-		<Size>e,e</Size>
-		<Layout>horizontal</Layout>
-		<BgColor>#FFFFFF</BgColor>
-		<FgColor>#333333</FgColor>
-		<BgColorRowEven>#ebebeb</BgColorRowEven>
-		<BgColorRowUneven>#cfdee7</BgColorRowUneven>
-	</TableView>
+<WidgetGroup>
+<Pos>6,332</Pos>
+<Size>200,586</Size>
+<Layout>vertical</Layout>
+  <Children>
+    <!--Search Input Field-->
+	 <SearchBox></SearchBox>
+	 <!--Library Tree View-->
+	 <LibrarySidebar></LibrarySidebar>
+  </Children>
+</WidgetGroup>
 
+<WidgetGroup>
+<Pos>266,332</Pos>
+<Size>992,586</Size>							
+<Layout>vertical</Layout>
+	<Children>
+	  <!-- Library Table-->
+	  <Library></Library>
+	</Children>
+</WidgetGroup>
+	
 	<!--
 	############################################################################################
 	############################################################################################
